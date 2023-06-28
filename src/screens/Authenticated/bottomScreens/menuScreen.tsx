@@ -4,39 +4,6 @@ import CategoryGridTile from "../../../components/categoryGridTile";
 import { Center, HStack, Icon, IconButton, VStack, Text, Box } from "native-base";
 import { MaterialIcons } from "@expo/vector-icons";
 
-export const CATEGORIES = [
-  {
-    id: "c1",
-    title: "Italian",
-    color: "#f5428d",
-  },
-  {
-    id: "c2",
-    title: "Italian",
-    color: "#f5428d",
-  },
-  {
-    id: "c3",
-    title: "Italian",
-    color: "#f5428d",
-  },
-  {
-    id: "c4",
-    title: "Italian",
-    color: "#f5428d",
-  },
-  {
-    id: "c5",
-    title: "Italian",
-    color: "#f5428d",
-  },
-  {
-    id: "c6",
-    title: "Italian",
-    color: "#f5428d",
-  },
-];
-
 const MenuScreen = ({ navigation }: { navigation: any }) => {
   return (
     <Box>

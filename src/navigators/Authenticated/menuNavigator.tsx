@@ -3,11 +3,12 @@ import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "../../screens/Authenticated/homeScreen";
 import OnboardingScreen from "../../screens/Authenticated/onboardingScreen";
 import MenuScreen from "../../screens/Authenticated/bottomScreens/menuScreen";
-import RestaurantsScreen from "../../screens/Authenticated/menuScreens/restaurantsScreen";
+import RestaurantsScreen from "../../screens/Authenticated/menuScreens/restaurant/restaurantsScreen";
 import HotelsScreen from "../../screens/Authenticated/menuScreens/hotelsScreen";
 import NightlifeScreen from "../../screens/Authenticated/menuScreens/nightlifeScreen";
 import ShoppingScreen from "../../screens/Authenticated/menuScreens/shoppingScreen";
 import FavoritesScreen from "../../screens/Authenticated/bottomScreens/favoritesScreen";
+import RestaurantDetailsScreen from "../../screens/Authenticated/menuScreens/restaurant/restaurantDetailsScreen";
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ const MenuNavigator = () => {
       <Stack.Screen name="Nightlife" component={NightlifeScreen} />
       <Stack.Screen name="Shopping" component={ShoppingScreen} />
       <Stack.Screen name="Favorites" component={FavoritesScreen} />
+      <Stack.Screen name="Restaurant Details" component={RestaurantDetailsScreen} />
     </Stack.Navigator>
   );
 };
