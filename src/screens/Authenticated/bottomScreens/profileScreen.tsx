@@ -20,7 +20,7 @@ const ProfileScreen = ({ navigation }: { navigation: any }) => {
         </HStack>
       </HStack>
       <Center bgColor={"#002c2b"} flex={2}>
-        <Image style={{ width: 260, height: 280, marginBottom: 50 }} source={require("../../assets/images/logo_shkrim.png")} />
+        <Image style={{ width: 260, height: 280, marginBottom: 50 }} source={require("../../../assets/images/logo_shkrim.png")} />
       </Center>
       <Box flex={4}>
         <View style={{ flex: 4, justifyContent: "center", marginTop: "10%" }}>

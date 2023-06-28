@@ -1,11 +1,12 @@
 import { View, Text, Button } from "react-native";
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import MenuScreen from "./menuScreen";
-import FavoritesScreen from "./favoritesScreen";
+import MenuScreen from "./bottomScreens/menuScreen";
+import FavoritesScreen from "./bottomScreens/favoritesScreen";
 import { Icon } from "native-base";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
-import ProfileScreen from "./profileScreen";
+import ProfileScreen from "./bottomScreens/profileScreen";
+import MenuNavigator from "../../navigators/Authenticated/menuNavigator";
 
 const Tab = createBottomTabNavigator();
 const HomeScreen = ({ navigation }: { navigation: any }) => {
@@ -41,7 +42,7 @@ const HomeScreen = ({ navigation }: { navigation: any }) => {
         />
         <Tab.Screen
           name="Menu"
-          component={MenuScreen}
+          component={MenuNavigator}
           options={{
             tabBarIcon: ({ focused }) => (
               <View style={{ alignItems: "center", justifyContent: "center" }}>
