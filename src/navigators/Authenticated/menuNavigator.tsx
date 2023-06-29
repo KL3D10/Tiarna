@@ -6,11 +6,12 @@ import MenuScreen from "../../screens/Authenticated/bottomScreens/menuScreen";
 import RestaurantsScreen from "../../screens/Authenticated/menuScreens/restaurant/restaurantsScreen";
 import HotelsScreen from "../../screens/Authenticated/menuScreens/hotelsScreens/hotelsScreen";
 import NightlifeScreen from "../../screens/Authenticated/menuScreens/nightlifeScreens/nightlifeScreen";
-import ShoppingScreen from "../../screens/Authenticated/menuScreens/shoppingScreen";
+import ShoppingScreen from "../../screens/Authenticated/menuScreens/shoppingScreens/shoppingScreen";
 import FavoritesScreen from "../../screens/Authenticated/bottomScreens/favoritesScreen";
 import RestaurantDetailsScreen from "../../screens/Authenticated/menuScreens/restaurant/restaurantDetailsScreen";
 import HotelDetailsScreen from "../../screens/Authenticated/menuScreens/hotelsScreens/hotelDetailsScreen";
 import NightlifeDetailsScreen from "../../screens/Authenticated/menuScreens/nightlifeScreens/nightlifeDetailsScreen";
+import HotspotsScreen from "../../screens/Authenticated/menuScreens/hotspotsScreen/hotspotsScreen";
 
 const Stack = createStackNavigator();
 
@@ -23,7 +24,7 @@ const MenuNavigator = () => {
       <Stack.Screen name="Hotels" component={HotelsScreen} />
       <Stack.Screen name="Nightlife" component={NightlifeScreen} />
       <Stack.Screen name="Shopping" component={ShoppingScreen} />
-      <Stack.Screen name="Favorites" component={FavoritesScreen} />
+      <Stack.Screen name="Hotspots" component={HotspotsScreen} />
       <Stack.Screen name="Restaurant Details" component={RestaurantDetailsScreen} />
       <Stack.Screen name="Hotel Details" component={HotelDetailsScreen} />
       <Stack.Screen name="Nightlife Details" component={NightlifeDetailsScreen} />

@@ -30,7 +30,7 @@ const MenuScreen = ({ navigation }: { navigation: any }) => {
         </HStack>
         <HStack>
           <CategoryGridTile title={"AR Explore"} icon={"smartphone"} onPress={() => console.log("AR")} />
-          <CategoryGridTile title={"Favorites"} icon={"favorite"} onPress={() => navigation.navigate("Favorites")} />
+          <CategoryGridTile title={"Hotspots"} icon={"explore"} onPress={() => navigation.navigate("Hotspots")} />
         </HStack>
       </Center>
     </Box>
