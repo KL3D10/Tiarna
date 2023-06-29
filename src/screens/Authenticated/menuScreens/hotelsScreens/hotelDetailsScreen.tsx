@@ -4,8 +4,8 @@ import { Box, HStack, Icon, IconButton, Text, VStack } from "native-base";
 import { MaterialIcons } from "@expo/vector-icons";
 import { ICategoryData } from "../../../../models/category-interface";
 
-const RestaurantDetailsScreen = ({ navigation, route }: { navigation: any; route: any }) => {
-  const restaurantData: ICategoryData = route.params.item;
+const HotelDetailsScreen = ({ navigation, route }: { navigation: any; route: any }) => {
+  const hotelData: ICategoryData = route.params.item;
   return (
     <Box flex={1}>
       <HStack bg={"#002c2b"} px="1" py="3" justifyContent="space-between" alignItems="center" w="100%">
@@ -17,7 +17,7 @@ const RestaurantDetailsScreen = ({ navigation, route }: { navigation: any; route
           />
         </HStack>
         <Text color="white" fontSize="20" flex={1} textAlign={"center"}>
-          {restaurantData.title}
+          {hotelData.title}
         </Text>
         <HStack alignItems="center">
           <IconButton
@@ -29,7 +29,7 @@ const RestaurantDetailsScreen = ({ navigation, route }: { navigation: any; route
       </HStack>
       <View style={{ height: "30%" }}>
         <ImageBackground
-          source={{ uri: "https://robbreport.com/wp-content/uploads/2020/12/grilled-dorade-vernick-fish.jpg?w=1000" }}
+          source={{ uri: hotelData.detailImgUri }}
           style={{
             width: "100%",
             flex: 1,
@@ -51,26 +51,26 @@ const RestaurantDetailsScreen = ({ navigation, route }: { navigation: any; route
           >
             <HStack>
               <Text color={"white"} fontSize={28} fontWeight={"bold"}>
-                {restaurantData.title}
+                {hotelData.title}
               </Text>
             </HStack>
             <HStack alignItems="center" justifyContent={"space-around"}>
               <HStack alignItems="center">
                 <Icon size="md" as={MaterialIcons} name="location-on" color="white" />
                 <Text color={"white"} fontSize={16} fontWeight={"bold"} marginLeft={1}>
-                  {restaurantData.street}
+                  {hotelData.street}
                 </Text>
               </HStack>
               <HStack alignItems="center">
                 <Icon size="md" as={MaterialIcons} name="access-time" color="white" />
                 <Text color={"white"} fontSize={16} fontWeight={"bold"} marginLeft={1}>
-                  {restaurantData.openTime}
+                  {hotelData.openTime}
                 </Text>
               </HStack>
               <HStack alignItems="center">
                 <Icon size="md" as={MaterialIcons} name="favorite" color="white" />
                 <Text color={"white"} fontSize={16} fontWeight={"bold"} marginLeft={1}>
-                  {restaurantData.likes}
+                  {hotelData.likes}
                 </Text>
               </HStack>
             </HStack>
@@ -78,19 +78,19 @@ const RestaurantDetailsScreen = ({ navigation, route }: { navigation: any; route
         </ImageBackground>
       </View>
       <Box padding={6} backgroundColor={"white"}>
-        <Text>{restaurantData.description}</Text>
+        <Text>{hotelData.description}</Text>
       </Box>
       <HStack paddingY={2} paddingX={5} backgroundColor={"#002c2b"} justifyContent={"space-between"}>
         <HStack>
           <MaterialIcons name="smartphone" size={24} color="white" />
           <Text color={"white"} marginLeft={2}>
-            {restaurantData.phone}
+            {hotelData.phone}
           </Text>
         </HStack>
         <HStack>
           <MaterialIcons name="email" size={24} color="white" />
           <Text color={"white"} marginLeft={2}>
-            {restaurantData.email}
+            {hotelData.email}
           </Text>
         </HStack>
       </HStack>
@@ -98,4 +98,4 @@ const RestaurantDetailsScreen = ({ navigation, route }: { navigation: any; route
   );
 };
 
-export default RestaurantDetailsScreen;
+export default HotelDetailsScreen;

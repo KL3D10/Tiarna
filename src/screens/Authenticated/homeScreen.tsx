@@ -30,7 +30,7 @@ const HomeScreen = ({ navigation }: { navigation: any }) => {
       >
         <Tab.Screen
           name="Location"
-          component={MenuScreen}
+          component={FavoritesScreen}
           options={{
             tabBarIcon: ({ focused }) => (
               <View style={{ alignItems: "center", justifyContent: "center" }}>

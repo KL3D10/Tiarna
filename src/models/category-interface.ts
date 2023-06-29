@@ -1,4 +1,4 @@
-export interface IRestaurantData {
+export interface ICategoryData {
     id: number,
     imgUri: string,
     title: string,
