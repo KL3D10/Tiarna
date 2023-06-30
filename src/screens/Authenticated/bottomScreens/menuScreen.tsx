@@ -7,17 +7,10 @@ import { MaterialIcons } from "@expo/vector-icons";
 const MenuScreen = ({ navigation }: { navigation: any }) => {
   return (
     <Box>
-      <HStack bg={"#002c2b"} px="1" py="3" justifyContent="space-between" alignItems="center" w="100%">
-        <HStack alignItems="center">
-          <IconButton
-            borderRadius={50}
-            icon={<Icon size="md" as={MaterialIcons} name="arrow-back" color="white" />}
-            onPress={() => navigation.goBack()}
-          />
-          <Text color="white" fontSize="20" paddingLeft={5}>
+      <HStack bg={"#002c2b"} py="3" justifyContent="center" alignItems="center" w="100%">
+          <Text color="white" fontSize="20">
             Categories
           </Text>
-        </HStack>
       </HStack>
       <Center alignItems={"center"} height={"90%"} bgColor={"white"}>
         <HStack>
