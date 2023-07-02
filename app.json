@@ -4,10 +4,10 @@
     "slug": "tiarna_expo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/logo_white.png",
+      "image": "./src/assets/images/logo_white.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +19,27 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.klediom3.tiarna_expo"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1Ijoia2xlZGlvbTMiLCJhIjoiY2xqazA3OHljMGlqbDNkbnVqM3NpdGRraSJ9.fwFZ4Q8nXZ8PWtu3zos7EA"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3e07290a-2159-4173-b960-d790ddfad187"
+      }
     }
   }
 }

@@ -7,6 +7,7 @@ import { Icon } from "native-base";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import ProfileScreen from "./bottomScreens/profileScreen";
 import MenuNavigator from "../../navigators/Authenticated/menuNavigator";
+import LocationScreen from "./bottomScreens/locationScreen";
 
 const Tab = createBottomTabNavigator();
 const HomeScreen = ({ navigation }: { navigation: any }) => {
@@ -30,7 +31,7 @@ const HomeScreen = ({ navigation }: { navigation: any }) => {
       >
         <Tab.Screen
           name="Location"
-          component={FavoritesScreen}
+          component={LocationScreen}
           options={{
             tabBarIcon: ({ focused }) => (
               <View style={{ alignItems: "center", justifyContent: "center" }}>
