@@ -1,8 +1,10 @@
 import { ImageBackground, View, Image } from "react-native";
 import React from "react";
-import { Box, HStack, Icon, IconButton, Text, VStack } from "native-base";
+import { Box, HStack, Icon, IconButton, ScrollView, Text, VStack } from "native-base";
 import { MaterialIcons } from "@expo/vector-icons";
 import { ICategoryData } from "../../../../models/category-interface";
+import MapScreen from "../../../../components/mapScreen";
+import ItemMapScreen from "../../../../components/itemMapScreen";
 
 const HotelDetailsScreen = ({ navigation, route }: { navigation: any; route: any }) => {
   const hotelData: ICategoryData = route.params.item;
@@ -94,6 +96,9 @@ const HotelDetailsScreen = ({ navigation, route }: { navigation: any; route: any
           </Text>
         </HStack>
       </HStack>
+      <View style={{ flex: 1, marginBottom: "15%" }}>
+        <ItemMapScreen />
+      </View>
     </Box>
   );
 };
