@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import Mapbox from "@rnmapbox/maps";
 
-Mapbox.setAccessToken("sk.eyJ1Ijoia2xlZGlvbTMiLCJhIjoiY2xqazA3OHljMGlqbDNkbnVqM3NpdGRraSJ9.fwFZ4Q8nXZ8PWtu3zos7EA");
+Mapbox.setAccessToken("sk.eyJ1Ijoia2xlZGlvbTMiLCJhIjoiY2xrMzRocHY3MDlyMTNqdGFvOWY1cTcwbyJ9.yDJfCMaqjZdFsobXo-0xkg");
 
 const MapScreen = () => {
   return (
